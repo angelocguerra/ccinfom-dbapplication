@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+    This file displays the page for the Record Rental feature.
+-->
+<html>
+    <head>
+        <title>Record Rental</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/record-rental.css">
+        <style>
+            html {
+                background: linear-gradient(0deg, rgba(15,15,15,0.7), rgba(15,15,15,0.7)),
+                    url('Assets/goks-bg.png') no-repeat center center fixed;
+                background-size: cover;
+                margin-top: 25px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            input {
+                text-align: center;
+                height: 30px;
+                width: 100px;
+                margin: 10px;
+                font-family: 'Inter', sans-serif;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Record Asset Rental</h1>
+        
+        <form action="record_rental_processing.jsp">
+            <h5>Asset ID to be Rented               <input type="text" id="asset_id" name="asset_id"><br>
+                Rental/Transaction Date             <input type="text" id="rental_date" name="rental_date" placeholder="yyyy-mm-dd" style="width:200px;"><br>
+                Renter's Resident ID                <input type="text" id="resident_id" name="resident_id"><br>
+                Authorizing Officer's ID            <input type="text" id="officer_id" name="officer_id"><br>
+                Authorizing Officer's Position      <select id="officer_position" name="officer_position">
+                    <option value="President">President</option>
+                    <option value="Vice-President">Vice-President</option>
+                    <option value="Treasurer">Treasurer</option>
+                    <option value="Auditor">Auditor</option>
+                    <option value="Secretary">Secretary</option>
+                </select><br>
+                Authorizing Officer's Election Date <input type="text" id="date_elected" name="date_elected" placeholder="yyyy-mm-dd" style="width:200px;"><br>
+                Rental Amount                       <input type="text" id="rental_amount" name="rental_amount" style="width:150px;"><br>
+                Discount                            <input type="text" id="discount" name="discount" style="width:150px;"><br>
+                Official Receipt Number             <input type="text" id="or_no" name="or_no" style="width:150px;">
+            </h5>
+            
+            <input type="reset" value="CLEAR" class="reset">
+            <input type="submit" value="SUBMIT" class="submit">
+        </form>
+    </body>
+</html>
