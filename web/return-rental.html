@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+    This file displays the page for the Return Asset Rental feature.
+-->
+<html>
+    <head>
+        <title>Return Rental</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/return-rental.css">
+        <style>
+            html {
+                background: linear-gradient(0deg, rgba(15,15,15,0.7), rgba(15,15,15,0.7)),
+                    url('Assets/goks-bg.png') no-repeat center center fixed;
+                background-size: cover;
+                margin-top: 25px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            input {
+                text-align: center;
+                width: 100px;
+                height: 30px;
+                font-family: 'Inter', sans-serif;
+                font-size: 25px;
+                margin: 10px;
+            }
+            select {
+                text-align: center;
+                height: 40px;
+                width: 200px;
+                font-size: 20px;
+                font-family: 'Inter', sans-serif;
+                margin: 7px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Return Asset Rental</h1>
+        
+        <form action="return_processing.jsp">
+            <h5>Rented Asset ID to be Returned      <input type="text" id="asset_id" name="asset_id"><br>
+                Renter's Resident ID                <input type="text" id="resident_id" name="resident_id"><br>
+                Inspection Details upon Asset Return<input type="text" id="inspection_details" name="inspection_details" style="width:250px;"><br>
+                Assessed Value of Damages           <input type="text" id="assessed_value" name="assessed_value" style="width:150px;"><br>
+                Accepting Officer's ID              <input type="text" id="accept_hoid" name="accept_hoid"><br>
+                Accepting Officer's Position        <select id="accept_position" name="accept_position">
+                    <option value="President">President</option>
+                    <option value="Vice-President">Vice-President</option>
+                    <option value="Treasurer">Treasurer</option>
+                    <option value="Auditor">Auditor</option>
+                    <option value="Secretary">Secretary</option>
+                </select><br>
+                Accepting Officer's Date Elected    <input type="text" id="accept_electiondate" name="accept_electiondate" placeholder="yyyy-mm-dd" style="width:200px;">
+            </h5>
+            
+            <input type="reset" value="CLEAR" class="reset">
+            <input type="submit" value="SUBMIT" class="submit">
+        </form>
+    </body>
+</html>
