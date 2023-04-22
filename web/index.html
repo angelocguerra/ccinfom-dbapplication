@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+    This file displays the Home page of the site.
 -->
 <html>
     <head>
-        <title>Asset Management Application</title>
+        <title>Planet Goks HOA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/index.css">
+        <style>
+            html {
+                background: linear-gradient(0deg, rgba(25,25,25,0.5), rgba(25,25,25,0.5)), url('Assets/goks-bg.png') no-repeat center center fixed;
+                background-size: cover;
+                margin-top: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        </style>
     </head>
+    
     <body>
-        <a href="register.html"> 1. Register Asset              </a><br>
-        <a href="register.html"> 2. Update Asset Information    </a><br>
-        <a href="register.html"> 3. Delete Asset                </a><br>
-        <a href="register.html"> 4. Dispose Asset               </a><br>
-        <a href="register.html"> 5. Record Rental               </a><br>
-        <a href="register.html"> 6. Return Rental               </a><br>
-        <a href="register.html"> 7. Update Rental Information   </a><br>
-        <a href="register.html"> 8. Delete Rental Information   </a><br>
+        <h1>Planet Goks HOA</h1>
+        
+        <div class="category" style="width: 100%; display: table;">
+            <div style="display: table-row; height: 100px;">
+                <div class="sub-asset" style="width: 50%; display: table-cell;">
+                    <h3 style="background: #043977;">ASSETS</h3>
+                    <h5><a href="register-asset.html">Register Asset</a></h5>
+                    <h5><a href="update-asset.html">Update Asset Info</a></h5>
+                    <h5><a href="delete-asset.html">Delete Asset</a></h5>
+                    <h5><a href="dispose-asset.html">Dispose Asset</a></h5>
+                </div>
+        
+                <div class="sub-rental" style="width: 50%; display: table-cell;">
+                    <h3 style="background: #325b20;">RENTALS</h3>
+                    <h5><a href="record-rental.html">Record Rental</a></h5>
+                    <h5><a href="update-rental.html">Update Rental Info</a></h5>
+                    <h5><a href="return-rental.html">Return Rental</a></h5>
+                    <h5><a href="delete-rental.html">Delete Rental Info</a></h5>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
