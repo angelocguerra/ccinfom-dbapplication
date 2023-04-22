@@ -1,45 +1,56 @@
-<!DOCTYPE html>
-<!--
-    This file displays the page for the Delete Asset Rental feature.
--->
-<html>
-    <head>
-        <title>Delete Rental</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/return-rental.css"> <!-- Imported from return rental since almost same styles -->
-        <style>
-            html {
-                background: linear-gradient(0deg, rgba(15,15,15,0.7), rgba(15,15,15,0.7)),
-                    url('Assets/goks-bg.png') no-repeat center center fixed;
-                background-size: cover;
-                margin-top: 25px;
-                margin-left: 50px;
-                margin-right: 50px;
-            }
-            input {
-                text-align: center;
-                width: 100px;
-                height: 30px;
-                font-family: 'Inter', sans-serif;
-                font-size: 25px;
-                margin: 10px;
-            }
-        </style>
-    </head>
-    
-    <body>
-        <h1>Delete Asset Rental Information</h1>
-        
-        <form action="delete_rental_processing.jsp">
-            <h5>Rented Asset ID to be Deleted       <input type="text" id="asset_id" name="asset_id"><br>
-                Rental/Transaction Date             <input type="text" id="rental_date" name="rental_date" placeholder="yyyy-mm-dd" style="width:200px;"><br>
-                Approving President's ID            <input type="text" id="officer_id" name="officer_id"><br>
-                Approving President's Election Date <input type="text" id="date_elected" name="date_elected" placeholder="yyyy-mm-dd" style="width:200px;"><br>
-            </h5>
-            
-            <input type="reset" value="CLEAR" class="reset">
-            <input type="submit" value="SUBMIT" class="submit">
-        </form>
-    </body>
-</html>
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    color: white;
+    border-radius: 15px;
+    background: #009900;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.sub-asset > h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: white;
+    border-radius: 15px;
+    background: #0869d9;
+    padding: 10px;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+div.sub-rental > h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: white;
+    border-radius: 15px;
+    background: #4a8830;
+    padding: 10px;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+div.asset-subrow1, div.asset-subrow2, div.rental-subrow1, div.rental-subrow2 {
+    align-items: center;
+    justify-content: center;
+}
+div.sub-asset > h5 > a:link, div.sub-rental > h5 > a:link,
+div.sub-asset > h5 > a:visited, div.sub-rental > h5 > a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+h5:hover {
+    transform: scale(1.05);
+    transition: 0.05s;
+}
