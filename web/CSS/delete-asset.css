@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    border-radius: 15px;
+    background: #0869d9;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 15px;
+    padding: 50px;
+}
+
+form {
+    display: block;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    margin: 20px;
+}
+
+input.reset, input.submit {
+    height: 40px;
+    width: 150px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+}
