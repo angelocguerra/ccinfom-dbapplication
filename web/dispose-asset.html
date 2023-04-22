@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+    This file displays the page for the Dispose Asset feature.
+-->
+<html>
+    <head>
+        <title>Dispose Asset</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/delete-asset.css"> <!-- imported Delete css since all same styling -->
+        <style>
+            html {
+                background: linear-gradient(0deg, rgba(15,15,15,0.7), rgba(15,15,15,0.7)),
+                    url('Assets/goks-bg.png') no-repeat center center fixed;
+                background-size: cover;
+                margin-top: 25px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Dispose Asset</h1>
+        
+        <form action="dispose_processing.jsp">
+            <h5>Input the Asset ID you wish to dispose<br>
+            <input type="text" id="asset_id" name="asset_id"></h5>
+            
+            <input type="reset" value="CLEAR" class="reset">
+            <input type="submit" value="SUBMIT" class="submit">
+        </form>
+    </body>
+</html>
