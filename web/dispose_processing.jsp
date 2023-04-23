@@ -57,10 +57,9 @@
                     if(status == 1) {
             %>
                         <h5>Asset Successfully Disposed</h5>
-            <%      }
-                } catch (Exception e) {
+            <%      } else {
             %>
-                    <h5>Failed to Dispose Asset</h5>
+                        <h5>Failed to Dispose Asset</h5>
             <%  }
             %>
             <input type="submit" value="BACK TO MENU" class="submit">

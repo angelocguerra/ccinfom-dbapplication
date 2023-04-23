@@ -87,8 +87,7 @@
                     if(status == 1) {
             %>
                         <h5>Asset Rental Information Successfully Updated</h5>
-            <%      }
-                } catch (Exception e) {
+            <%      } else {
             %>
                         <h5>Failed to Update Asset Rental Information</h5>
             <%  }

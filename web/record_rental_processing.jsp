@@ -82,8 +82,7 @@
                     if(status == 1) {
             %>
                         <h5>New Asset Rental Successfully Recorded</h5>
-            <%      }
-                } catch (Exception e) {
+            <%      } else {
             %>
                         <h5>Failed to Record New Asset Rental</h5>
             <%  }

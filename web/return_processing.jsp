@@ -75,10 +75,9 @@
                     if(status == 1) {
             %>
                         <h5>Asset Rental Successfully Returned</h5>
-            <%      }
-                } catch (Exception e) {
+            <%      } else {
             %>
-                    <h5>Failed to Return Asset Rental</h5>
+                        <h5>Failed to Return Asset Rental</h5>
             <%  }
             %>
             <input type="submit" value="BACK TO MENU" class="submit">
