@@ -128,6 +128,12 @@ public class assets {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/HOADB?useTimezone=true&serverTimezone=UTC&user=root&password=12345678"); //TODO: Fill out
             System.out.println("Connection Successful");
             
+            PreparedStatement pstate = conn.prepareStatement("DELETE FROM asset_transactions WHERE asset_id=?");
+            pstate.setInt(1, assetID);
+            
+            pstate.executeUpdate();
+            pstate.close();
+            
             PreparedStatement pstmt = conn.prepareStatement("DELETE FROM assets WHERE asset_id=?");
             pstmt.setInt(1, assetID);
             
