@@ -47,8 +47,6 @@
             <h1>Delete Asset Rental Information</h1>
             <jsp:useBean id="A" class="assetmanagement.asset_rentals" scope="session" />
             <% // Receive the values from delete-rental.html
-
-                try {
                     String v_officer_id = request.getParameter("officer_id");
                     A.approvalHOID = Integer.parseInt(v_officer_id);
                     
@@ -66,8 +64,7 @@
                     if(status == 1) {
             %>
                         <h5>Asset Rental Successfully Deleted</h5>
-            <%      }
-                } catch (Exception e) {
+            <%      } else {
             %>
                         <h5>Failed to Delete Asset Rental</h5>
             <%  }
