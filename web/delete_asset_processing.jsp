@@ -47,7 +47,6 @@
             <h1>Delete Asset</h1>
             <jsp:useBean id="A" class="assetmanagement.assets" scope="session" />
             <% // Receive the values from register-asset.html
-                try {
                     String v_asset_id = request.getParameter("asset_id");
                     A.assetID = Integer.parseInt(v_asset_id);
                     
@@ -56,10 +55,9 @@
                     if(status == 1) {
             %>
                         <h5>Asset Successfully Deleted</h5>
-            <%      }
-                } catch (Exception e) {
+            <%      } else {
             %>
-                    <h5>Failed to Delete Asset</h5>
+                        <h5>Failed to Delete Asset</h5>
             <%  }
             %>
             <input type="submit" value="BACK TO MENU" class="submit">
