@@ -47,8 +47,7 @@
             <h1>Update Asset Rental Information</h1>
             <jsp:useBean id="A" class="assetmanagement.asset_rentals" scope="session" />
             <% // Receive the values from update-rental.html
-
-                try {
+                
                     String v_rental_date = request.getParameter("rental_date");
                     A.rentalDate = v_rental_date;
                     

@@ -47,8 +47,7 @@
             <h1>Record Asset Rental</h1>
             <jsp:useBean id="A" class="assetmanagement.asset_rentals" scope="session" />
             <% // Receive the values from record-rental.html
-
-                try {
+            
                     String v_asset_id = request.getParameter("asset_id");
                     A.assetID = Integer.parseInt(v_asset_id);
 

@@ -47,8 +47,7 @@
             <h1>Return Asset Rental</h1>
             <jsp:useBean id="A" class="assetmanagement.asset_rentals" scope="session" />
             <% // Receive the values from register-asset.html
-
-                try {
+            
                     String v_inspection_details = request.getParameter("inspection_details");
                     A.inspectionDetails = v_inspection_details;
                     

@@ -47,6 +47,7 @@
             <h1>Delete Asset Rental Information</h1>
             <jsp:useBean id="A" class="assetmanagement.asset_rentals" scope="session" />
             <% // Receive the values from delete-rental.html
+            
                     String v_officer_id = request.getParameter("officer_id");
                     A.approvalHOID = Integer.parseInt(v_officer_id);
                     

@@ -47,8 +47,7 @@
             <h1>Register Asset</h1>
             <jsp:useBean id="A" class="assetmanagement.assets" scope="session" />
             <% // Receive the values from register-asset.html
-
-                try {
+            
                     String v_asset_name = request.getParameter("asset_name");
                     A.assetName = v_asset_name;
 
